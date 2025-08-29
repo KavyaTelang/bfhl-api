@@ -86,10 +86,11 @@ app.post('/bfhl', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    res.status(200).send('BFHL API is running. Use POST /bfhl');
+    res.status(200).send('BFHL API is running. Use POST /bfhl to submit data.');
 });
 
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
+
 });
